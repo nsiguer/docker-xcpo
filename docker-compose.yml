@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mn-xcpo:
+    image: xcpo
+    container_name: mn-xcpo
+    build:
+      context: .
+    ports:
+      - 17356:17356/tcp
+    volumes:
+      - $PWD/.copico:/root/.copico 
